@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:orientation="horizontal"
+        app:rowCount="4">
+
+
+        <Button
+            android:id="@+id/v_display"
+            android:gravity="center"
+            android:text="@string/display"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowSpan="4" />
+
+        <Button
+            android:id="@+id/v_number_1"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_1"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_2"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_2"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_3"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_3"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_4"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_4"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_5"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_5"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_6"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_6"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_7"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_7"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_8"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_8"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_9"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_9"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_next"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/next"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_number_0"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/number_0"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/v_delete"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/delete"
+            app:layout_columnWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

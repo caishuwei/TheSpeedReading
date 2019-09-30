@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.csw.android.thespeedreading"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    greendao {
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+        daoPackage 'com.csw.android.thespeedreading.greendao'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation rootProject.ext.androidX.appcompat
+    implementation rootProject.ext.androidX.annotations
+    implementation rootProject.ext.androidX.material
+    implementation rootProject.ext.androidX.drawerlayout
+    implementation rootProject.ext.androidX.recyclerview
+    implementation rootProject.ext.androidX.viewpager
+    implementation rootProject.ext.androidX.viewpager2
+    implementation rootProject.ext.androidX.cardview
+    implementation rootProject.ext.androidX.gridlayout
+    implementation rootProject.ext.androidX.multidex
+    implementation rootProject.ext.others.BaseRecyclerViewAdapterHelper
+    implementation rootProject.ext.others.rxjava
+    implementation rootProject.ext.others.rxandroid
+    implementation rootProject.ext.others.dagger
+    implementation rootProject.ext.others.rxpermissions
+    compileOnly rootProject.ext.others.jsr250_api
+    implementation rootProject.ext.others.greenDao
+    implementation rootProject.ext.others.greenDao_generator
+    implementation rootProject.ext.others.greenDao_update_helper
+    implementation rootProject.ext.others.gson
+}
